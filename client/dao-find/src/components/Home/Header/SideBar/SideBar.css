@@ -1,0 +1,27 @@
+.nav-bar {
+    font-size: 30px;
+    margin-top: 30px;
+    text-align: left;
+}
+.nav-bar ul {
+    list-style: none;
+    background-color: white;
+    height: 100%;
+    width: 300px;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+    color: #00a2ff;
+}
+.nav-bar ul li {
+    margin: 40px 10px;
+    width: 100%;
+    cursor: pointer;
+}
+.nav-bar ul li:hover {
+      opacity: 10%;
+}
+
+.fas {
+    margin-right: 10px;
+}
