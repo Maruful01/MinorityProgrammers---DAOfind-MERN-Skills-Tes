@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  background-color: #0093E9;
   background-image: linear-gradient(60deg, #3ac7ff -44%,  #0278ff 100%);
   min-height: 100vh;
   color: white;
@@ -9,6 +8,9 @@
 }
 .home-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
+  position: relative;
+  z-index: 0;
+  padding-top: 130px;
 }
 

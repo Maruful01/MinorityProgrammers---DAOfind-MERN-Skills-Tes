@@ -1,0 +1,29 @@
+.daos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    align-items: center;
+    margin: 5px 0px;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 7px;
+    box-shadow: 2px 3px 10px #838383;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.daos:hover {
+        opacity: 50%;
+        transform: scale(1.01);
+}
+
+
+.daos-img {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.border-right {
+    border-right: 1px solid #504b4b;
+}

@@ -1,0 +1,15 @@
+.daos-list {
+      width: 400px;
+      background-color: white;
+      height: 65vh;
+      margin-left: 10px;
+      padding: 20px;
+}
+
+.daos-list button {
+      background: none;
+      border: none;
+      outline: none;
+      background-color: #36c4fc;
+      color: white;
+}

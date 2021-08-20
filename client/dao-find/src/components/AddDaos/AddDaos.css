@@ -1,0 +1,14 @@
+.text-input {
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    width: 100%;
+}
+.input-div {
+    background-color: white;
+    padding: 30px;
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+}

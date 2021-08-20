@@ -2,10 +2,12 @@
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     align-items: center;
-    width: 96%;
+    width: 100%;
     margin: auto;
     grid-gap: 20px;
-
+    position: fixed;
+    z-index: 5;
+    background-image: linear-gradient(60deg, #3ac7ff -44%,  #0278ff 100%);
 }
 
 
@@ -25,11 +27,12 @@
     border-radius: 10px;
     padding: 0 0px 0px 60px;
     color: whitesmoke;
-    outline: white;
     background-image: url('../../../Logo/search-solid.svg');
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: 10px;
+    position: relative;
+    z-index: 5 !important;
 }
 .header button {
     width: 200px;
