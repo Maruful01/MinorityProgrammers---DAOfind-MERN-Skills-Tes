@@ -2,13 +2,66 @@
     background: none;
     border: none;
     outline: none;
-    border-bottom: 1px solid gray;
-    width: 100%;
+    border-bottom: 1px solid #bebebe;
+    width: 50%;
 }
-.input-div {
+.form-div div {
     background-color: white;
     padding: 30px;
     width: 60%;
     margin: auto;
     border-radius: 10px;
+    color: black;
+    text-align: left;
+}
+.color-red {
+    color: red;
+}
+.submit-btn-area {
+    width: 100%;
+    background-color: #ffffff00 !important;
+}
+.submit-btn {
+    border: none;
+    background: none;
+    outline: none;
+    background-color: royalblue;
+    padding: 5px;
+    color: white;
+    text-align: left;
+}
+.c-box {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.c-box input {
+   margin-right: 10px;
+   opacity: 80%;
+   cursor: pointer;
+   height: 17px;
+   width: 17px;
+}
+.c-box p {
+    font-size: 14px;
+    position: relative;
+    top: 6px;
+ }
+ .circle-box input {
+    margin-right: 10px;
+    opacity: 80%;
+    cursor: pointer;
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+ }
+ @media only screen and (max-width: 1405px) {
+    .form-div div {
+        width: 70%;
+    }
+    @media only screen and (max-width: 955px) {
+        .form-div div {
+            width: 90%;
+        }
+    }
 }

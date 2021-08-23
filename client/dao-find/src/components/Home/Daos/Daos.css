@@ -10,6 +10,21 @@
     padding: 10px;
     cursor: pointer;
 }
+.daos-with-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    align-items: center;
+    margin: 5px 0px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top: 1px solid #b8b8b8a6;
+    position: relative;
+    z-index: 0;
+}
 
 .daos:hover {
         opacity: 50%;
@@ -26,4 +41,65 @@
 
 .border-right {
     border-right: 1px solid #504b4b;
+    
+}
+h4 {
+    font-size: 22px;
+}
+.edit-form {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.edit-form input {
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    margin-right: 20px;
+
+}
+.edit-update {
+    background: red;
+}
+.grid-three {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+.grid-three button {
+   border: none;
+   background: none;
+   outline: none;
+   background: #e0e0e0;
+   margin: 2px 0px;
+   width: 50px;
+   font-size: 12px;
+}
+.grid-three .fa-globe {
+          color: #00a2ff;
+          font-size: 30px;
+ }
+
+ .grid-three .fa-diamond {
+    color: #6521e4;
+    font-size: 30px;
+}
+.grid-three h6 {
+    color: #6b6b6b68;
+}
+@media only screen and (max-width: 1215px) {
+    h4 {
+        font-size: 17px;
+    }
+    @media only screen and (max-width: 1263px) {
+        .edit-form input {
+              width: 150px;
+        }
+    }
+    @media only screen and (max-width: 893px) {
+        .edit-form input {
+              width: 100px;
+        }
+    }
 }

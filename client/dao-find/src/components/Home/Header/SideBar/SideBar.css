@@ -1,17 +1,15 @@
 .nav-bar {
     font-size: 30px;
-    margin-top: 30px;
     text-align: left;
 }
 .nav-bar ul {
     list-style: none;
     background-color: white;
-    height: 60vh;
-    width: 300px;
     align-items: center;
     text-align: left;
     padding: 20px;
     color: #00a2ff;
+    margin-right: 20px;
 }
 .nav-bar ul li {
     margin: 40px 10px;
@@ -24,4 +22,10 @@
 
 .fas {
     margin-right: 10px;
+}
+@media only screen and (max-width: 1403px) {
+    .nav-bar {
+        font-size: 25px;
+    }
+
 }

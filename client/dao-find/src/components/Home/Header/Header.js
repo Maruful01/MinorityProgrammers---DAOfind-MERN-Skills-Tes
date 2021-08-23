@@ -5,7 +5,7 @@ import "./Header.css";
 const Header = () => {
     const placeholder = "Search DAOs";
     return (
-        <section>
+        <section className="header-section">
             <div className="header">
             <img src={logo} className="bg-logo" alt="" />
             <form action="">

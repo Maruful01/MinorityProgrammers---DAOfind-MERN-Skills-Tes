@@ -1,6 +1,7 @@
 const express = require ('express');
 const bodyParser = require('body-parser')
 const cors = require ('cors');
+const objectId = require ('mongodb').ObjectId;
 const MongoClient = require('mongodb').MongoClient;
 const fileUpload = require('express-fileupload');
 require('dotenv').config()
@@ -32,6 +33,39 @@ client.connect(err => {
       res.send (documents);
     })
   })
+
+  app.post ('/addDao', (req, res) => {
+
+    const dao = req.body;
+    daoCollection.insertOne (dao)
+    .then (result => {
+        res.send (result.insertedCount > 0)
+    })
+   })
+
+   app.get ('/edit', (req, res) => {
+    // console.log (req.query.id)
+    daoCollection.find ({id: req.query.id})
+    .toArray ((err, documents) => {
+      res.send (documents);
+    })
+  })
+
+  app.post ('/editDao', (req, res) => {
+
+    const dao = {
+      name: req.body.name,
+      twl: req.body.twl,
+      id: req.body.id,
+    }
+
+    const _id = req.body._id;
+
+    daoCollection.updateOne ({"_id": objectId(_id)}, {$set: dao})
+    .then (result => {
+        res.send (result.insertedCount > 0)
+    })
+   })
 
 });
 

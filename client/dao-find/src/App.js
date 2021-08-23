@@ -30,7 +30,6 @@ function App() {
         </Route>
      </Switch>
   {/* Switch -----_______--- */}
-  <ListedDaos path="/listedDaos" />
   </div>
     </div>
 
