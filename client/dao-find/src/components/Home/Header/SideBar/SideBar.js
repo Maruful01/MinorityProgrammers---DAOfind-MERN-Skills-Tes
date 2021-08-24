@@ -9,7 +9,7 @@ const SideBar = () => {
                <Link style={{textDecoration: "none"}} to="/"><li><i class="fas fa-home-lg-alt"></i>Leader board</li> </Link> 
                 <li><i class="fad fa-equals"></i> Dashboard</li>
                 <li><i class="fas fa-users"></i> People</li>
-                <li><i class="fas fa-book-open"></i>Learn</li>
+               <Link style={{textDecoration: "none"}} to="/learnDao"> <li><i class="fas fa-book-open"></i>Learn</li> </Link> 
                 <li><i class="fas fa-shopping-cart"></i> Sponsor</li>
                 <li><i class="fas fa-dollar-sign"></i> Earn</li>
             </ul>

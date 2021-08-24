@@ -10,6 +10,7 @@ import Header from './components/Home/Header/Header';
 import SideBar from './components/Home/Header/SideBar/SideBar';
 import ListedDaos from './components/Home/ListedDaos/ListedDaos';
 import AddDaos from './components/AddDaos/AddDaos';
+import LearnDao from './components/LearnDao/LearnDao';
 function App() {
   return (
     <div className="App">
@@ -23,6 +24,10 @@ function App() {
      <Switch>
         <Route  path="/add">
         <AddDaos></AddDaos>
+        </Route>
+
+        <Route  path="/learnDao">
+        <LearnDao/>
         </Route>
 
         <Route path="/">

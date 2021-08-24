@@ -1,0 +1,38 @@
+.learn-dao-component {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    color: black;
+    width: 95%;
+    margin: auto;
+}
+.learn-dao {
+    height: 200px;
+    box-shadow: 1px 1px 5px #85e7ff;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 2px solid #267dff;
+}
+.learn-dao div {
+    height: 50%;
+}
+.border-b{
+    border-bottom: 1px solid #cacaca;
+    margin: 20px;
+    
+}
+
+.fa-globe {
+    color: #00ccff;
+    font-size: 30px;
+}
+.learn-dao button {
+    border: none;
+    background: none;
+    outline: none;
+    background: #e0e0e0;
+    margin: 2px 0px;
+    width: 50px;
+    font-size: 12px;
+    margin-left: 10px;
+ }

@@ -1,0 +1,12 @@
+.search-daos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    align-items: center;
+    margin: 5px 0px;
+    background-color: #fffb00;
+    color: black;
+    border-radius: 7px;
+    box-shadow: 2px 3px 10px #838383;
+    padding: 10px;
+    cursor: pointer;
+}

@@ -14,7 +14,7 @@ const ListedDaos = () => {
     const newAdded = length - 2;
 
     useEffect ( () => {
-        fetch ("http://localhost:5000/dao")
+        fetch ("https://arcane-atoll-19629.herokuapp.com/dao")
         .then(res => res.json())
         .then(data => {
             setLength (data.length);
@@ -23,7 +23,6 @@ const ListedDaos = () => {
       }, 
       [length])
 
-      console.log ("newDaos", newDaos);
     return (
         <section>
             { list ? <button type="button" onClick={() => setList (false)} className="newly-dao-list btn btn-outline-light">Close Newly Listed DAOs</button> : 

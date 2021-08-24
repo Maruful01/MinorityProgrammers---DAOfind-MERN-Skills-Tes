@@ -11,7 +11,7 @@ const AddDaos = () => {
 
                             const { register, handleSubmit, watch, formState: { errors } } = useForm();
                              const onSubmit = data => {
-                              fetch ('http://localhost:5000/addDao', {
+                              fetch ('https://arcane-atoll-19629.herokuapp.com/addDao', {
                                 method: 'POST',
                                 headers: {'content-type': 'application/json'}, 
                                 body: JSON.stringify (data)

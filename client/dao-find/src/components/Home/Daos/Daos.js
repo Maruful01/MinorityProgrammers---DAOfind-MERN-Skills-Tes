@@ -14,7 +14,7 @@ const Daos = (props) => {
       const daoFindHandler = () => {
 
         setDaoDetails (true)
-        fetch ('http://localhost:5000/edit?id=' + id) 
+        fetch ('https://arcane-atoll-19629.herokuapp.com/edit?id=' + id) 
         .then (res => res.json())
         .then (ans => console.log ("ans", ans))
        }
@@ -23,7 +23,7 @@ const Daos = (props) => {
 
        const { register, handleSubmit, watch, formState: { errors } } = useForm();
        const onSubmit = data => {
-        fetch ('http://localhost:5000/editDao', {
+        fetch ('https://arcane-atoll-19629.herokuapp.com/editDao', {
           method: 'POST',
           headers: {'content-type': 'application/json'}, 
           body: JSON.stringify (data)
@@ -83,7 +83,7 @@ const Daos = (props) => {
                                <h4><i class="fas fa-user"></i> <span>{id}</span></h4>
                                <h6><i class="fas fa-diamond"></i> Ethereum</h6>
                                <div>
-                                 <button>Social</button> <br />
+                                 <button>{category}</button> <br />
                                  <button>Grants</button>
                                </div>
                                <i class="fas fa-globe"></i>
@@ -101,7 +101,7 @@ const Daos = (props) => {
                                <h4><i class="fas fa-user"></i> <span>{id}</span></h4>
                                <h6><i class="fas fa-diamond"></i> Ethereum</h6>
                                <div>
-                                 <button>Social</button> <br />
+                                 <button>{category}</button> <br />
                                  <button>Grants</button>
                                </div>
                                <i class="fas fa-globe"></i>
